@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Frontlocker Test Page</title>
+  </head>
+  <body>
+    <input type="password" id="frontlocker-key" placeholder="Decryption password">
+    <div id="frontlocker" style="display:none;">
+      {"iv":"/EMtKuzKy3gtjuPo3BtBqA==","v":1,"iter":10000,"ks":128,"ts":64,"mode":"ccm","adata":"","cipher":"aes","salt":"14OeoLw3MbA=","ct":"i1m+n0E/TIT2RvmlNWBsQQhHQ5SwO+fcALWTH1GRCco="}
+    </div>
+    <div class="some-other-unlocked-content">
+      <p>This is all human-readable, visible, unencrypted.</p>
+    </div>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/sjcl/1.0.6/sjcl.min.js" charset="utf-8"></script>
+     <script src="frontlocker.js" charset="utf-8"></script>
+     <script type="text/javascript">
+
+     </script>
+  </body>
+</html>
