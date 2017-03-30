@@ -44,6 +44,7 @@ var frontlocker = {
       if (key.length > 0 && encryptedHTML.length > 0) {
         try {
           decryptedHTML = JSON.parse(sjcl.decrypt(key, encryptedHTML));
+          sessionStorage.setItem('frontlocker-key', JSON.stringify(key));
         } catch (err) {
           if (err.message === "ccm: tag doesn't match"){
             console.error("Wrong Password");
@@ -58,8 +59,19 @@ var frontlocker = {
           callback(decryptedHTML);
           return decryptedHTML;
         }
+      } else {
+        console.error("Make sure the password input is using 'frontlocker-key' id and the div containing the HTML to be encrypted has 'frontlocker' id. Alternatively pass the key and encrypted html to this function like unlock(key, htmlToDecrypt, callback)");
+      }
+  },
+
+  check:function(encryptedHTML, callback){
+    callback = callback || noop;
+    var key = JSON.parse(sessionStorage.getItem('frontlocker-key'));
+    encryptedHTML = encryptedHTML || document.getElementById('frontlocker').innerHTML;
+    if (key.length > 0) {
+        frontlocker.unlock(key, encryptedHTML, callback);
     } else {
-      console.error("Make sure the password input is using 'frontlocker-key' id and the div containing the HTML to be encrypted has 'frontlocker' id. Alternatively pass the key and encrypted html to this function like unlock(key, htmlToDecrypt, callback)");
+        console.error("There's no password stored in sessionStorage. User will need to re-enter password.");
     }
   }
 
