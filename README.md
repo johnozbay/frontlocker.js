@@ -154,9 +154,3 @@ This function is a convenience wrapper for `frontlocker.unlock()`, that simply c
   </body>
 </html>
 ```
-
-## Easy way to create encrypted (locked) content
-
-Because it is a front-end only library, and no back-end computing is required, Frontlocker has a quick website for you to simply paste your HTML code, type the desired password, and generate encrypted (locked) content. You can visit http://frontlocker.com and easily create encrypted (locked) HTML. There are no servers involved, nothing is sent anywhere, and it all happens in your browser.
-
-Currently this is the quickest way to encrypt (lock) content, involving just a quick copy/paste. But it would theoretically be possible to create an Atom package, or a grunt / gulp automation too.
