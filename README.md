@@ -13,7 +13,7 @@ As developers, for client presentations / previews, often we have to set up smal
 
 Frontlocker is built with vanilla js. It only has one dependency, and that is the amazing [Stanford Javascript Crypto Library](https://github.com/bitwiseshiftleft/sjcl).
 
-First, include [sjcl.js]((https://github.com/bitwiseshiftleft/sjcl) and frontlocker.js in your html file.
+First, include [sjcl.js](https://github.com/bitwiseshiftleft/sjcl) and frontlocker.js in your html file.
 
 ```html
   <!-- ... -->
