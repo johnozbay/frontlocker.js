@@ -1,5 +1,5 @@
 // DOM LOCKER
-// Copyright 2017 John Ozbay
+// Copyright 2017 John Ozbay / TBWA
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 // The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
@@ -9,15 +9,15 @@ var noop = function(param){}; // callback fallback.
 
 var frontlocker = {
 
-  lock:function (key, unencryptedHTML, callback) {
+  lock:function (password, unencryptedHTML, callback) {
     callback = callback || noop;
-    key = key || document.getElementById("frontlocker-key").value;
+    password = password || document.getElementById("frontlocker-password").value;
     unencryptedHTML = unencryptedHTML || document.getElementById('frontlocker').innerHTML;
     var encryptedHTML;
 
-    if (key.length > 0 && unencryptedHTML.length > 0) {
+    if (password.length > 0 && unencryptedHTML.length > 0) {
       try {
-        encryptedHTML = sjcl.encrypt(key, JSON.stringify(unencryptedHTML));
+        encryptedHTML = sjcl.encrypt(password, JSON.stringify(unencryptedHTML));
       } catch (err) {
         if (err.message === "ccm: tag doesn't match"){
           console.error("Wrong Password");
@@ -31,20 +31,20 @@ var frontlocker = {
         return encryptedHTML;
       }
     } else {
-        console.error("Make sure the password input is using 'frontlocker-key' id and the div containing the HTML to be encrypted has 'frontlocker' id. Alternatively pass the key and plaintext html to this function like lock(key, htmlToEncrypt, callback)");
+        console.error("Make sure the password input is using 'frontlocker-password' id and the div containing the HTML to be encrypted has 'frontlocker' id. Alternatively pass the password and plaintext html to this function like lock(password, htmlToEncrypt, callback)");
     }
   },
 
-  unlock:function (key, encryptedHTML, callback) {
+  unlock:function (password, encryptedHTML, callback) {
     callback = callback || noop;
-    key = key || document.getElementById("frontlocker-key").value;
+    password = password || document.getElementById("frontlocker-password").value;
     encryptedHTML = encryptedHTML || document.getElementById('frontlocker').innerHTML;
     var decryptedHTML;
 
-      if (key.length > 0 && encryptedHTML.length > 0) {
+      if (password.length > 0 && encryptedHTML.length > 0) {
         try {
-          decryptedHTML = JSON.parse(sjcl.decrypt(key, encryptedHTML));
-          sessionStorage.setItem('frontlocker-key', JSON.stringify(key));
+          decryptedHTML = JSON.parse(sjcl.decrypt(password, encryptedHTML));
+          sessionStorage.setItem('frontlocker-password', JSON.stringify(password));
         } catch (err) {
           if (err.message === "ccm: tag doesn't match"){
             console.error("Wrong Password");
@@ -60,16 +60,16 @@ var frontlocker = {
           return decryptedHTML;
         }
       } else {
-        console.error("Make sure the password input is using 'frontlocker-key' id and the div containing the HTML to be encrypted has 'frontlocker' id. Alternatively pass the key and encrypted html to this function like unlock(key, htmlToDecrypt, callback)");
+        console.error("Make sure the password input is using 'frontlocker-password' id and the div containing the HTML to be encrypted has 'frontlocker' id. Alternatively pass the password and encrypted html to this function like unlock(password, htmlToDecrypt, callback)");
       }
   },
 
   check:function(encryptedHTML, callback){
     callback = callback || noop;
-    var key = JSON.parse(sessionStorage.getItem('frontlocker-key'));
+    var password = JSON.parse(sessionStorage.getItem('frontlocker-password'));
     encryptedHTML = encryptedHTML || document.getElementById('frontlocker').innerHTML;
-    if (key.length > 0) {
-        frontlocker.unlock(key, encryptedHTML, callback);
+    if (password.length > 0) {
+        return frontlocker.unlock(password, encryptedHTML, callback);
     } else {
         console.error("There's no password stored in sessionStorage. User will need to re-enter password.");
     }

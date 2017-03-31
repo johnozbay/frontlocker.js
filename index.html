@@ -2,20 +2,24 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Frontlocker Test Page</title>
+    <title>Frontlocker Example HTML</title>
   </head>
   <body>
-    <input type="password" id="frontlocker-key" placeholder="Decryption password">
+    <input type="password" id="frontlocker-password" placeholder="Decryption password" onkeypress="return frontlocker.unlock()">
     <div id="frontlocker" style="display:none;">
-      {"iv":"/EMtKuzKy3gtjuPo3BtBqA==","v":1,"iter":10000,"ks":128,"ts":64,"mode":"ccm","adata":"","cipher":"aes","salt":"14OeoLw3MbA=","ct":"i1m+n0E/TIT2RvmlNWBsQQhHQ5SwO+fcALWTH1GRCco="}
+      { encrypted HTML content }
     </div>
     <div class="some-other-unlocked-content">
       <p>This is all human-readable, visible, unencrypted.</p>
     </div>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/sjcl/1.0.6/sjcl.min.js" charset="utf-8"></script>
+     <script src="sjcl.min.js" charset="utf-8"></script>
      <script src="frontlocker.js" charset="utf-8"></script>
      <script type="text/javascript">
+           // if the user entered the password before, and if the password is still in sessionStorage,
+           // this function will unlock the content immediately, without the need for typing the password again.
+           frontlocker.check("Some-Encrypted-HTML-Content-Here", callback);
 
+           var decryptedHTML = frontlocker.unlock("YourSuperSecretPassword", "Some-Encrypted-HTML-Content-Here", callback);
      </script>
   </body>
 </html>
