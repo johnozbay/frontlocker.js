@@ -3,8 +3,8 @@
 Frontlocker is a simple server-less, *.htpasswd* replacement for your static HTML files. It uses [Stanford Javascript Crypto Library](https://github.com/bitwiseshiftleft/sjcl) to encrypt & decrypt DOM elements to hide and protect sensitive content on a website. It's a micro Javascript library that can hide / show sensitive content when the user types a pre-defined password. Its main purpose is to save time from setting up servers for the sole purpose of using *.htpasswd*. And in case if you're wondering... No. **Your password isn't stored in the code**
 
 ## Who is this for ?
-Do you find yourself setting up servers to serve static files **just** to use *.htpasswd*?  
-Do you find yourself wondering if only you could serve static html files on AWS and still have password protection life would be awesome?  
+* Do you find yourself setting up servers to serve static files **just** to use *.htpasswd*?  
+* Do you find yourself wondering if only you could serve static html files on AWS and still have password protection life would be awesome?  
 **Frontlocker is for you!**
 
 As developers, for client presentations / previews, often we have to set up small microsites protected with *.htpasswd*. Generally, these sites are static html files, there's no backend involved, and we still end up having to set up a server. Frontlocker is here to solve exactly this problem.
