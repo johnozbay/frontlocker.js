@@ -42,7 +42,7 @@ And put all your encrypted (locked) content into a hidden div, with the `frontlo
 </div>
 ```
 
-Done. When the user presses *return* after typing their password, Frontlocker will decrypt and replace the contents of the `frontlocker` div with the decrypted one.
+Done. When the user presses *return* after typing their password, Frontlocker will decrypt and replace the encrypted contents of the `frontlocker` div with the decrypted one.
 
 Got AJAX calls? Got dynamic content? Got a multi-page site? Or simply want more control or flexibility?  Then you might want to take the JS way.
 
