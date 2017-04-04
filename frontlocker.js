@@ -55,8 +55,10 @@ var frontlocker = {
         }
 
         if (decryptedHTML) {
-          document.getElementById("frontlocker").innerHTML = decryptedHTML;
-          document.getElementById("frontlocker").style.display = "block";
+          try {
+            document.getElementById("frontlocker").innerHTML = decryptedHTML;
+            document.getElementById("frontlocker").style.display = "block";
+          } catch (err) {}
           callback(decryptedHTML);
           return decryptedHTML;
         }
