@@ -1,0 +1,86 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+html	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^<html>$/;"	function	line:2
+head	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^  <head>$/;"	function	line:3
+meta	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^    <meta charset="utf-8">$/;"	function	line:4
+title	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^    <title>FRONTLOCKER.JS<\/title>$/;"	function	line:5
+link	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^    <link rel="stylesheet" href="https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/semantic-ui\/2.2.10\/semantic.css">$/;"	function	line:6
+style	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^    <style media="screen">$/;"	function	line:7
+body	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^  <body>$/;"	function	line:14
+div	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^      <div>$/;"	function	line:17
+a	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^        <a href="https:\/\/github.com\/johnozbay\/frontlocker.js" class="github-corner" aria-label="View source on Github"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#fff; color:#151513; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"><\/path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"><\/path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"><\/path><\/svg><\/a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}<\/style>$/;"	function	line:19
+div	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^        <div class="ui inverted vertical masthead center aligned segment">$/;"	function	line:21
+div	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^          <div class="ui container">$/;"	function	line:23
+div	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^            <div class="ui large secondary inverted pointing menu">$/;"	function	line:24
+a	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^              <a class="active item" style="letter-spacing:2px;">FRONTLOCKER.JS<\/a>$/;"	function	line:25
+a	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^              <a class="item" href="#about">About<\/a>$/;"	function	line:26
+a	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^              <a class="item" href="#ready">Encrypt Content<\/a>$/;"	function	line:27
+div	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^          <div class="ui text container" style="padding:25vh 0;">$/;"	function	line:31
+h	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^            <h1 class="ui inverted header" style="letter-spacing:2px;">FRONTLOCKER.JS<\/h1>$/;"	function	line:32
+h	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^            <h2 style="font-size:20px; margin-bottom:30px;">A simple, server-less, .htpasswd replacement for your static HTML files.<\/h2>$/;"	function	line:33
+div	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^        <div class="ui vertical stripe segment" style="padding:10vh 0;" id="about">$/;"	function	line:38
+div	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^          <div class="ui middle aligned stackable grid container">$/;"	function	line:39
+div	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^            <div class="row">$/;"	function	line:40
+div	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^              <div class="column" style="font-size:1.14285714rem;">$/;"	function	line:41
+h	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^                <h3 class="ui header">How does it work?<\/h3>$/;"	function	line:42
+p	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^                <p>Frontlocker is a simple server-less, .htpasswd replacement for your static HTML files. It uses Stanford Javascript Crypto Library to encrypt &amp; decrypt DOM elements to hide and protect sensitive content on a website. <br><br>$/;"	function	line:43
+h	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^                <h3 class="ui header">Who is this for?<\/h3>$/;"	function	line:45
+p	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^                <p>If you find yourself setting up servers to serve static files just to use .htpasswd <\/p>$/;"	function	line:46
+p	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^                <p>If you find yourself wondering if only you could serve static html files on AWS S3 and still have password protection, life would be awesome<\/p>$/;"	function	line:47
+p	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^                <p><strong>Frontlocker is for you!<\/strong><\/p>$/;"	function	line:48
+div	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^        <div class="ui vertical stripe quote segment"style="padding:3vh 0;">$/;"	function	line:55
+div	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^          <div class="ui equal width stackable internally celled grid">$/;"	function	line:56
+div	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^            <div class="center aligned row">$/;"	function	line:57
+div	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^              <div class="column">$/;"	function	line:58
+a	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^                <a class="ui huge button" href="https:\/\/github.com\/johnozbay\/frontlocker.js"><i class="github alternate icon"><\/i>Check it out on Github<\/a><br><br>$/;"	function	line:59
+p	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^                <p>Frontlocker is entirely open source! Read up on how to start using it on your website.<\/p>$/;"	function	line:60
+div	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^              <div class="column">$/;"	function	line:62
+a	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^                <a class="ui huge blue button" href="#ready"><i class="lock icon"><\/i>Encrypt (lock) your content<\/a><br><br>$/;"	function	line:63
+p	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^                <p>It all happens in your browser, and not thing is sent to any servers.<\/p>$/;"	function	line:64
+div	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^        <div class="ui vertical stripe segment" id="ready" style="padding:10vh 0;">$/;"	function	line:70
+div	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^          <div class="ui text container">$/;"	function	line:71
+h	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^            <h3 class="ui header">Ready to start using Frontlocker? <\/h3>$/;"	function	line:72
+h	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^            <h4 class="ui horizontal header divider">Step 1<\/h4>$/;"	function	line:74
+br	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^            <br>$/;"	function	line:75
+p	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^            <p>Go to our github page and check out how to implement Fronlocker.js, and you can use the inputs below for your convenience to encrypt (lock) some content<\/p>$/;"	function	line:76
+a	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^            <a class="ui button" href="https:\/\/github.com\/johnozbay\/frontlocker.js" target="_blank"><i class="github alternate icon"><\/i>Go to Github<\/a>$/;"	function	line:79
+h	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^            <h4 class="ui horizontal header divider">Step 2<\/h4>$/;"	function	line:81
+br	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^            <br>$/;"	function	line:82
+p	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^            <p>Paste in the HTML below, and pick a password to use to encrypt &amp; decrypt this HTML.<\/p>$/;"	function	line:83
+p	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^            <p>All the encryption happens in your browser, so nothing is transmitted to any servers.<\/p>$/;"	function	line:84
+div	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^            <div class="ui fluid input">$/;"	function	line:85
+input	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^              <input type="text" placeholder="Paste your HTML here">$/;"	function	line:86
+br	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^            <br>$/;"	function	line:88
+div	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^            <div class="ui fluid action input">$/;"	function	line:89
+input	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^              <input type="password" placeholder="Type in a password here">$/;"	function	line:90
+div	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^              <div class="ui blue button">Encrypt (Lock)<\/div>$/;"	function	line:91
+br	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^            <br>$/;"	function	line:93
+h	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^            <h4 class="ui horizontal header divider">Step 3<\/h4>$/;"	function	line:94
+br	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^            <br>$/;"	function	line:95
+p	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^            <p>Now copy the contents of this textbox onto your page instead of your HTML.<\/p>$/;"	function	line:96
+div	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^            <div class="ui fluid icon input">$/;"	function	line:97
+input	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^              <input type="text" placeholder="Copy Me">$/;"	function	line:98
+i	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^              <i class="lock icon"><\/i>$/;"	function	line:99
+br	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^            <br>$/;"	function	line:101
+p	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^            <p>As a reminder, the site's visitors will need to enter the password you've just typed to decrypt (unlock) these contents.<\/p>$/;"	function	line:102
+p	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^            <p><strong>And that's it!<\/strong> Frontlocker should work. If run into any problems, or have questions, or think the documentation is lacking, please reach out on <a href="https:\/\/github.com\/johnozbay\/frontlocker.js" target="_blank">Github<\/a>!<\/p>$/;"	function	line:104
+br	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^            <br><br>$/;"	function	line:105
+div	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^        <div class="ui inverted vertical footer segment">$/;"	function	line:111
+div	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^          <div class="ui container">$/;"	function	line:112
+div	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^            <div class="ui stackable inverted divided equal height stackable grid">$/;"	function	line:113
+div	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^              <div class="four wide column">$/;"	function	line:114
+h	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^                <h4 class="ui inverted header">License<\/h4>$/;"	function	line:115
+div	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^                <div class="ui inverted">$/;"	function	line:116
+p	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^                  <p>Copyright &copy; 2017 - Frontlocker<br> Frontlocker is free and open-source (MIT).<\/p>$/;"	function	line:117
+div	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^              <div class="four wide column">$/;"	function	line:120
+h	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^                <h4 class="ui inverted header">About<\/h4>$/;"	function	line:121
+p	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^                <p>Frontlocker is made by <br><a href="https:\/\/johnozbay.com" target="_blank">John Ozbay<\/a> \\\\ <a href="http:\/\/www.tbwachiatdayny.com\/">TBWA NY<\/a><\/p>$/;"	function	line:122
+div	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^              <div class="eight wide column">$/;"	function	line:124
+h	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^                <h4 class="ui inverted header">Thanks<\/h4>$/;"	function	line:125
+p	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^                <p><a href="https:\/\/github.com\/bitwiseshiftleft\/sjcl" target="_blank">Stanford Javascript Crypto Library<\/a>, &nbsp; <a href="http:\/\/tholman.com\/" target="_blank">Tim Holman<\/a>, &nbsp; <a href="https:\/\/twitter.com\/joshuahirsch" target="_blank">Joshua Hirsch<\/a>, &nbsp; <a href="https:\/\/github.com\/jpol0191" target="_blank">Juan Pol<\/a><\/p>$/;"	function	line:126
+script	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^      <script src="https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/jquery\/3.2.1\/jquery.js"><\/script>$/;"	function	line:133
+script	/Users/jozbay/Dropbox/JOHN/Frontlocker/index.html	/^      <script src="https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/semantic-ui\/2.2.10\/semantic.min.js" charset="utf-8"><\/script>$/;"	function	line:134
