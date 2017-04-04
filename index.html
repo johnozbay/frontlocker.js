@@ -83,19 +83,19 @@
             <p>Paste in the HTML below, and pick a password to use to encrypt &amp; decrypt this HTML.</p>
             <p>All the encryption happens in your browser, so nothing is transmitted to any servers.</p>
             <div class="ui fluid input">
-              <input type="text" placeholder="Paste your HTML here">
+              <input type="text" id="htmlToLock" placeholder="Paste your HTML here">
             </div>
             <br>
             <div class="ui fluid action input">
-              <input type="password" placeholder="Type in a password here">
-              <div class="ui blue button">Encrypt (Lock)</div>
+              <input type="password" id="password" placeholder="Type in a password here">
+              <div class="ui blue button" id="encryptButton">Encrypt (Lock)</div>
             </div>
             <br>
             <h4 class="ui horizontal header divider">Step 3</h4>
             <br>
             <p>Now copy the contents of this textbox onto your page instead of your HTML.</p>
             <div class="ui fluid icon input">
-              <input type="text" placeholder="Copy Me">
+              <input type="text" id="lockedContent" onClick="this.setSelectionRange(0, this.value.length)" placeholder="Copy Me">
               <i class="lock icon"></i>
             </div>
             <br>
@@ -130,7 +130,16 @@
         </div>
       </div>
 
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/sjcl/1.0.6/sjcl.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js" charset="utf-8"></script>
+      <script src="frontlocker.js" charset="utf-8"></script>
+
+      <script type="text/javascript">
+        $("#encryptButton").click(function(event) {
+          var encryptedHTML = frontlocker.lock($("#password").val(),$("#htmlToLock").val());
+          $("#lockedContent").val(encryptedHTML);
+        });
+      </script>
   </body>
 </html>

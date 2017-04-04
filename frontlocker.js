@@ -26,7 +26,8 @@ var frontlocker = {
         }
       }
       if (encryptedHTML) {
-        document.getElementById("frontlocker").innerHTML = encryptedHTML;
+        try { document.getElementById("frontlocker").innerHTML = encryptedHTML; }
+        catch(err) { }
         callback(encryptedHTML);
         return encryptedHTML;
       }
