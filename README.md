@@ -164,4 +164,4 @@ Currently this is the quickest way to encrypt (lock) content, involving just a q
 ## Credits & Thanks
 
 This library is made for & with TBWA.
-Many thanks to the amazing people who made the [Stanford Javascript Crypto Library](https://github.com/bitwiseshiftleft/sjcl),
+Many thanks to the amazing people who made the [Stanford Javascript Crypto Library](https://github.com/bitwiseshiftleft/sjcl), friends and coworkers at [TBWA NY](http://www.tbwachiatdayny.com/), [Juan Pol](https://github.com/jpol0191).
