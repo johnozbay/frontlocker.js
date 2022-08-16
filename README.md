@@ -4,7 +4,7 @@ Frontlocker is a simple server-less, *.htpasswd* replacement for your static HTM
 
 ## Who is this for ?
 * Do you find yourself setting up servers to serve static files **just** to use *.htpasswd*?  
-* Do you find yourself wondering if only you could serve static html files on AWS and still have password protection life would be awesome?  
+* Do you find yourself wondering if only you could serve static html files on AWS and still have password protection and your life would be awesome?  
 **Frontlocker is for you!**
 
 As developers, for client presentations / previews, often we have to set up small microsites protected with *.htpasswd*. Generally, these sites are static html files, there's no backend involved, and we still end up having to set up a server. Frontlocker is here to solve exactly this problem.
@@ -22,7 +22,7 @@ First, include [sjcl.js](https://github.com/bitwiseshiftleft/sjcl) and frontlock
 </body>
 ```
 
-Now, there's two ways to use Frontlocker.
+Now, there're two ways to use Frontlocker.
 
 ---
 #### 1) The HTML Way
@@ -82,7 +82,7 @@ frontlocker.unlock(password, encryptedHTML, callback);
 // This would automatically set the contents of a div with the id 'frontlocker'
 ```
 
-* `password` is the password user entered to decrypt (unlock) the content
+* `password` is the password the user entered to decrypt (unlock) the content
 * `encryptedHTML` is the encrypted (locked) HTML that will be decrypted (unlocked)
 * `callback` is a function you'd like to call after Frontlocker is done decrypting.
 
